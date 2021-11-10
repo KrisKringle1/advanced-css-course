@@ -23,6 +23,19 @@
     &--white{
         background-color: $color-white;
         color: #777;
+
+        &::after{
+            background-color: $color-white;
+        }
+    }
+
+    &--green{
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after{
+            background-color: $color-white;
+        }
     }
 
     &::after {
@@ -39,9 +52,6 @@
 
     }
 
-    &--white::after{
-        background-color: $color-white;
-    }
 
     &:hover::after{
         transform: scaleX(1.4) scaleY(1.6);
